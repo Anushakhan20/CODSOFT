@@ -1,0 +1,145 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  /*background: linear-gradient(135deg, #153677, #4e085f);*/
+  padding: 10px;
+}
+
+.To-do-list-Website {
+  width: 100%;
+  max-width: 540px;
+  background: #9c9191;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.To-do-list-Website h2 {
+  color: #2c2d30;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+  width: 100%;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.995rem;
+  text-decoration: underline;
+}
+
+.To-do-list-Website h1 {
+  color: #3a2c2c;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  height: 40px;
+  /*font-family: 'Gluten', cursive;
+ font-family: 'PT Serif', serif;*/
+
+
+}
+
+
+.To-do-list-Website h2 img {
+  width: 123px;
+  margin-left: 160px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: large;
+
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #6c5856;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 40px;
+  font-weight: 700;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  background: #947d74;
+  margin: 15px 0;
+  display: flex;
+  min-height: 4px;
+  border-radius: 22.5px;
+  color: #292523;
+  box-shadow: 5px 5px 7px #6d6463;
+  font-weight: 700;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 60%;
+  background-image: url(Swatch_03_Brown.jpg);
+  background-size: cover;
+  background-position: center;
+  top: 15%;
+  left: 8px;
+}
+
+ul li.checked {
+  color: #ead9d9;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(checked.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 1px;
+  width: 40px;
+  height: 40px;
+  font-size: 37px;
+  color: #121111 line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background: #7f7171;
+
+}
